@@ -1,0 +1,45 @@
+{  
+     "Welcome Message":{"en": "Hi $userName Welcome to the $ticket management system of gbh", "es": "Bienvenido al sistema de gestión de tickets de GBH."},
+     "Welcome back message":{"en": "Welcome back to the ticket management system of GBH", "es": "Hola nuevamente al sistema de administración de tickets de gbh"},
+
+    "conversations": [
+        
+      {
+        "id": "languageMenu",
+        "questions": [
+          {
+            "text": { "es": "Elige tu idioma? \\nIt Español \\nIt Ingles ", "en": "Select your language \\nIt Spanish \\nIt English" },
+            "responses": [
+              { "keywords": { "es": ["español","es", "spanish"], "en": ["spanish", "es", "español"] }, "action": "setUserLanguaje" }
+
+            ]   
+          }           
+        ]
+      },
+      {
+        "id":"text01", 
+        "text": "This is just a sample text"
+
+      },
+
+      {
+         
+        "id": "mainMenu",
+        "questions": [
+          {
+            "text": { "es": "¿Como le podemos ayudar?", "en": "How can we assist you?" },
+            "WhatsMenu": {"es": "mainES", "en":"CustomEN"},
+            "responses": [
+              { "keywords": { "es": ["crear ticket", "ticket", "nuevo"], "en": ["create ticket", "new ticket"] }, "action": "create_ticket" },
+              { "keywords": { "es": ["ver tickets", "tickets abiertos", "ver"], "en": ["view tickets", "open tickets"] }, "action": "viewOpenTickets" },
+              { "keywords": { "es": ["necesito ayuda", "otra cosa"], "en": ["need help", "something else"   ] }, "action": "open_new_form", "next": "fallbackConv" }    
+            ]   
+          }
+  
+        ]
+      }
+    ]
+ }
+    
+  
+  

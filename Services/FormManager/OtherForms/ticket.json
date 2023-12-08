@@ -1,0 +1,15 @@
+{
+ "id":"specificTicket",
+ "questions": [
+    {
+      "text": { "es": "Tu numero de ticket es $currentTicketNumber //nlT Ver comentarios //lnt Ver ultimo comentario", "en": "Your ticket number is $ticketNumber  //nlt View Comments" },
+      "responses": [
+        { "keywords": { "es": ["ver comentarios","comentarios", "ver comentarios"], "en": ["See comments", "comments"] }, "action": "showConversation" },
+        { "keywords": { "es": ["ultimo","ultimo comentario", "ver ultimo comentario"], "en": ["See latest comment", "comment"] }, "action": "showLatestComment" }
+      ]   
+    }
+]
+
+
+
+}
